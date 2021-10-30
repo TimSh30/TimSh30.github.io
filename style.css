@@ -11,13 +11,9 @@ html, body, p {
 max-width:980px;	
 }
 .container{
-    width: 1300px;
     margin: 0px;
+}
 
-}
-body{
-    min-width: 1300px;
-}
 .bold-text{
 font-weight: bold; 
 
@@ -32,7 +28,8 @@ background: #663ea3;
 color: #FFFFFF;
 }
 .block1{
-width: 980px;
+
+width: 100%;
 margin: auto;
 padding-top: 30px;
 padding-bottom: 40px;
@@ -162,13 +159,14 @@ right: 69px;
 }
 
 .logo-container{
-width: 970px;
-height: 547px;
+
+height: 600px;
 
 background-image: url("img/China.jpg");
 background-size: cover;
 
 box-shadow: 0px -100px 50px 0px rgba(0,0,0,0.8) inset;
+max-width: 100%;
 
 }
 .text-overlap{
