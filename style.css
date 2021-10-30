@@ -10,6 +10,14 @@ html, body, p {
  img{
 max-width:980px;	
 }
+.container{
+    width: 1300px;
+    margin: 0px;
+
+}
+body{
+    min-width: 1300px;
+}
 .bold-text{
 font-weight: bold; 
 
