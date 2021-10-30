@@ -1,0 +1,185 @@
+html, body, p {
+    padding: 0;
+    margin: 0;
+}
+ p, li{
+     font-family: 'Courier New', Courier, monospace;
+     padding-left: 34px;
+    margin: 0px 0;
+ }
+ img{
+max-width:980px;	
+}
+.bold-text{
+font-weight: bold; 
+
+}
+.col-text {
+color: #00fe15;
+}
+.purple{
+background: #663ea3;
+}
+.white-text{
+color: #FFFFFF;
+}
+.block1{
+width: 980px;
+margin: auto;
+padding-top: 30px;
+padding-bottom: 40px;
+}
+.nav{
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+justify-content: space-between;
+margin-bottom: 40px;
+align-items: center;
+}
+.nav li{
+display: inline;
+margin: 5px;
+padding: 5px;
+cursor: pointer;
+}
+.nav li a{
+text-decoration: none;
+color: #00ecb8;
+
+
+}
+
+
+.exp{
+list-style: none; 
+padding: 0;
+margin: 0;
+}
+
+.exp li{
+margin: 10px 0;
+padding-bottom: 15px;
+}
+.achievments{    
+list-style: none;
+padding: 0;
+margin: 20px 0;    
+}
+
+.achievments li{
+background: url("./img/galochka.png") no-repeat left center;
+padding-left: 70px;
+margin: 20px 0;
+}
+
+.str-point{
+list-style: none;
+padding: 0;
+margin: 20px 0;  
+column-count: 2; 
+}
+.str-point li{
+background: url("./img/galochka2.png") no-repeat left center;
+padding-left: 70px;
+margin: 30px 0;
+margin-top: 0;
+padding-top: 18px;
+padding-bottom: 18px;
+}
+
+.logo-img{
+width: 980px;
+}
+.name-tag{
+font-size: 28px;
+}
+.paragrath {
+margin: 20px 0;
+font-size: 18px;
+line-height: 30px;
+}
+.hands-bg{
+background-image: url("./img/futuristic.jpg");
+background-position: center;
+background-size: cover;
+padding: 40px 20px;
+}
+.circle-img{
+    border-radius: 12%;
+    max-width: 320px;
+}
+#contact-form{
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+}
+#contact-form input, #contact-form textarea {
+padding: 20px;
+margin-bottom: 30px;
+font-size: 20px;
+font-weight: bold;
+outline: none;
+border: none;
+border: 3px solid #00ecbb;
+width: 934px;
+
+}
+
+textarea{
+font-family: 'Courier New', Courier, monospace;
+height: 100px;
+}
+
+input#submit{
+width: 350px;
+cursor: pointer;
+background: green;
+color: #6a13eb;
+}
+#gotop{
+text-decoration: none;
+display: inline-block;
+height: 69px;
+width: 69px;
+background: green;
+color: #6a13eb;
+font-size: 50px;
+font-weight: bold;
+text-align: center;
+position: fixed;
+bottom: 69px;
+right: 69px;
+}
+
+.logo-container{
+width: 970px;
+height: 547px;
+
+background-image: url("img/China.jpg");
+background-size: cover;
+
+box-shadow: 0px -100px 50px 0px rgba(0,0,0,0.8) inset;
+
+}
+.text-overlap{
+position: relative;
+padding: 0 60px;
+top: -65px;
+margin: 0;
+
+}
+H1{
+font-size: 40px;
+margin-top: 0;
+}
+H5{
+margin-top: 0;
+padding-left: 50px;
+}
+#gospace{
+padding-left: 20px;
+margin-top: 10px ;
+}
+
