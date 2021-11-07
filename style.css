@@ -13,7 +13,7 @@ body{
 
 .container{
     margin: 0px;    
-    max-width: 1920px;
+    max-width: 1900px;
 }
 
 
@@ -81,12 +81,29 @@ padding-left: 70px;
 margin: 20px 0;
 }
 
+.imgu{
+        border-radius: 22%;
+        max-width: 95%;
+        margin-top: 2%;
+}
+
 .str-point{
 list-style: none;
 padding: 0;
 margin: 20px 0;  
 column-count: 2; 
 }
+.text-over{
+    width: 96%;    
+    font-size: 21px;
+    color: rgba(145,0,42,2);
+    text-align: center;
+}
+.text-center{
+    text-align: center;
+    color: #008080;
+}
+
 .str-point li{
 background: url("./img/galochka2.png") no-repeat left center;
 padding-left: 70px;
@@ -115,7 +132,7 @@ padding: 40px 20px;
 }
 .circle-img{
     border-radius: 12%;
-    max-width: 33%;
+    max-width: 31%;
 }
 
 textarea{
@@ -146,7 +163,7 @@ right: 69px;
 
 .logo-container{
     height: 600px;
-    background-image: url("img/China.jpg");
+    background-image: url("img/Tim/Camp/IMG-20211105-WA0058.jpg");
     background-size: cover;
     box-shadow: 0px -100px 50px 0px rgba(0,0,0,0.8) inset;
     max-width: 100%;
