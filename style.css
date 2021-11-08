@@ -15,9 +15,6 @@ body{
     margin: 0px;    
     max-width: 1900px;
 }
-.circle-img:hover{
-    transform: scale(1.1);
-}
 
 
 .bold-text{
@@ -101,6 +98,8 @@ column-count: 2;
     font-size: 21px;
     color: rgba(145,0,42,2);
     text-align: center;
+    padding-top: 10px;
+;
 }
 .text-center{
     text-align: center;
@@ -133,6 +132,10 @@ background-position: center;
 background-size: cover;
 padding: 40px 20px;
 }
+.circle-img:hover{
+    transform: scale(1.1);
+}
+
 .circle-img{
     border-radius: 12%;
     max-width: 31%;
@@ -172,6 +175,14 @@ right: 69px;
     max-width: 100%;
 }
 
+.logo-container-trip{
+    height: 600px;
+    background-image: url("img/Tim/travel/IMG-20211105-WA0049.jpg");
+    background-size: cover;
+    box-shadow: 0px -100px 50px 0px rgba(0,0,0,0.8) inset;
+    max-width: 100%;
+    border-radius: 12%;
+}
 .text-overlap{
     position: relative;
     padding: 0 60px;
@@ -190,6 +201,35 @@ padding-left: 50px;
 padding-left: 20px;
 margin-top: 10px ;
 }
+
+.popup:not(:target) {
+    display: none;
+  }
+
+
+  .popup:target {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.9);
+  }
+  .full-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    text-decoration: none;
+    color: red;
+  }
 
 @media (max-width:1200px){
     .container{
@@ -222,7 +262,10 @@ margin-top: 10px ;
         margin-left: auto;
         margin-right: auto;
         padding-top: 10px;
+        padding: 0.2em;
         }    
+
+
 }
 @media (max-width:767px){
     .container{
@@ -241,7 +284,7 @@ margin-top: 10px ;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 10px;
+        padding-top: 10px;        
         }
     .nav{
         list-style: none;
