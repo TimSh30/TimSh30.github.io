@@ -30,16 +30,16 @@ background: #663ea3;
 .white-text{
 color: #FFFFFF;
 }
+a[href^="tel:"] {
+	color: #000;
+	font-size: 16px;
+	font-weight: 900;
+}
 .block1{
 width: 100%;
 margin: auto;
 padding-top: 30px;
 padding-bottom: 40px;
-}
-a[href^="tel:"] {
-	color: #000;
-	font-size: 16px;
-	font-weight: 900;
 }
 .nav{
 list-style: none;
@@ -86,6 +86,10 @@ padding-left: 70px;
 margin: 20px 0;
 }
 
+p1{
+    align-items: center;
+}
+
 .imgu{
         border-radius: 22%;
         max-width: 95%;
@@ -123,23 +127,10 @@ padding-bottom: 18px;
 .logo-img{
 width: 980px;
 }
-.name-tag{
-font-size: 28px;
+.text_demoBlock {
+   display: flex;
 }
-.paragrath {
-margin: 20px 0;
-font-size: 18px;
-line-height: 30px;
-}
-.hands-bg{
-background-image: url("./img/futuristic.jpg");
-background-position: center;
-background-size: cover;
-padding: 40px 20px;
-}
-.circle-img:hover{
-    transform: scale(1.1);
-}
+
 table {
     border-collapse: collapse;
     border: 2px solid rgb(200,200,200);
@@ -161,14 +152,38 @@ table {
     padding: 10px;
   }
 
+
+.name-tag{
+font-size: 28px;
+}
+.paragrath {
+margin: 20px 0;
+font-size: 18px;
+line-height: 30px;
+}
+.hands-bg{
+background-image: url("./img/futuristic.jpg");
+background-position: center;
+background-size: cover;
+padding: 40px 20px;
+}
+.circle-img:hover{
+    transform: scale(1.1);
+}
+
 .circle-img{
     border-radius: 12%;
     max-width: 31%;
+}
+.circle-img1{
+    max-width: 100%;        
+
 }
 
 textarea{
     font-family: 'Courier New', Courier, monospace;
     height: 100px;
+    
 }
 
 input#submit{
@@ -257,7 +272,7 @@ margin-top: 10px ;
   }
 
 @media (max-width:1200px){
-   .container{
+    .container{
         max-width: 970px;
     
     }
@@ -287,6 +302,10 @@ margin-top: 10px ;
                 align-items: center;
                 flex-direction: column;
                 }
+        .whatsapp-button {   
+            bottom: 5px; /*отступ кнопки снизу от экрана*/
+            right: 70px; /*отступ кнопки слева от экрана(right - справа)*/
+          }
 }
 @media (max-width:992px){
     .container{
@@ -307,8 +326,8 @@ margin-top: 10px ;
         margin-right: auto;
         padding-top: 10px;
         padding: 0.2em;
-        }   
-	 .nav{
+        }    
+        .nav{
             list-style: none;
             padding: 0;
             margin: 0;
@@ -318,6 +337,10 @@ margin-top: 10px ;
             align-items: center;
             flex-direction: column;
             }
+        .whatsapp-button {   
+            bottom: 5px; /*отступ кнопки снизу от экрана*/
+            right: 70px; /*отступ кнопки слева от экрана(right - справа)*/
+          }
 
 
 }
@@ -350,5 +373,66 @@ margin-top: 10px ;
         align-items: center;
         flex-direction: column;
         }
+        .whatsapp-button {   
+            bottom: 5px; /*отступ кнопки снизу от экрана*/
+            right: 70px; /*отступ кнопки слева от экрана(right - справа)*/
+          }
+}
+
+.whatsapp-button {
+    position: fixed;
+    right: 13px;
+    bottom: 90px;
+    transform: translate(-50%, -50%);
+    background: #25D366; /*цвет кнопки*/
+    border-radius: 50%;
+    width: 55px; /*ширина кнопки*/
+    height: 55px; /*высота кнопки*/
+    color: #fff;
+    text-align: center;
+    line-height: 53px; /*центровка иконки в кнопке*/
+    font-size: 35px; /*размер иконки*/
+    z-index: 9999;
+}
+.whatsapp-button a {
+    color: #fff;
+}
+.whatsapp-button:before,
+.whatsapp-button:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    border: 50%;
+    border: 1px solid #25D366; /*цвет анимированных волн от кнопки*/
+    left: -20px;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border-radius: 50%;
+    animation: animate 1.5s linear infinite;
+    opacity: 0;
+    backface-visibility: hidden; 
+}
+ 
+.whatsapp-button:after{
+    animation-delay: .5s;
+}
+ 
+@keyframes animate
+{
+    0%
+    {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: scale(1.2);
+        opacity: 0;
+    }
 }
 
